@@ -24,6 +24,16 @@
     --title-gradient: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 120%);
 }
 
+@font-face {
+    font-family: 'Lora';
+    src: url('fonts/Lora.woff');
+    }
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans.woff');
+    }
+
 body {
     background: var(--black);
     font-size: 24px;
