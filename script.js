@@ -217,7 +217,7 @@ function loadSettings() {
     const mobile = isMobile();
 
     const defaults = {
-        userName: '',
+        userName: 'MRI Enthusiast',
         colorScheme: 'catppuccin',
         theme: 'dark',
         colorMode: 'multi',
