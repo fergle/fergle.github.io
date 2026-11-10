@@ -1084,7 +1084,7 @@ async function geocodeLocation() {
     }
 
     const response = await fetch(
-        `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(location)}&limit=1&appid=${apiKey}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(location)}&limit=1&appid=${apiKey}&temperature_unit=metric`
     );
 
     if (!response.ok) throw new Error(`Geocoding API error: ${response.status}`);
