@@ -109,48 +109,37 @@ const defaultGreetings = {
 }
 
 const defaultCategories = [
-    { id: 'dev', name: 'Development', icon: 'fa-solid fa-code' },
-    { id: 'social', name: 'Social', icon: 'fa-solid fa-users' },
-    { id: 'media', name: 'Media', icon: 'fa-solid fa-play' },
-    { id: 'productivity', name: 'Productivity', icon: 'fa-solid fa-briefcase' }
+    { id: 'mri', name: 'MRI', icon: 'fa-solid fa-magnet' },
+    { id: 'anatomy', name: 'Anatomy & Physiology', icon: 'fa-solid fa-skull' },    
+    { id: 'michener', name: 'Michener', icon: 'fa-solid fa-school-flag' }
 ];
 
 const defaultLinks = {
-    'dev': [
-        { name: 'GitHub', url: 'https://github.com', icon: 'fa-brands fa-github' },
-        { name: 'GitLab', url: 'https://gitlab.com', icon: 'fa-brands fa-gitlab' },
-        { name: 'Stack Overflow', url: 'https://stackoverflow.com', icon: 'fa-brands fa-stack-overflow' },
-        { name: 'CodePen', url: 'https://codepen.io', icon: 'fa-brands fa-codepen' },
-        { name: 'Vercel', url: 'https://vercel.com', icon: 'fa-solid fa-v' },
-        { name: 'Docker', url: 'https://docker.com', icon: 'fa-brands fa-docker' }
+    'anatomy': [
+        { name: 'Sectional Anatomy', url: 'https://sectional-anatomy.org/', icon: 'fa-solid fa-skull' },
+        { name: 'MRI Master', url: 'https://mrimaster.com/', icon: 'fa-solid fa-skull' },
+        { name: 'OMCSA', url: 'https://www.omcsa.org/', icon: 'fa-solid fa-skull' },  
+        { name: 'Case Stacks', url: 'https://casestacks.com/anatomy', icon: 'fa-solid fa-skull' },
+        { name: 'Radiopeadia', url: 'https://radiopaedia.org/articles/labelled-imaging-anatomy-cases', icon: 'fa-solid fa-skull' },
+        { name: 'Castle Mountain', url: 'https://castlemountain.dk/atlas/index.php?page=modules', icon: 'fa-solid fa-skull' },
+        { name: 'Case Stacks', url: 'https://casestacks.com/anatomy', icon: 'fa-solid fa-skull' },
     ],
-    'social': [
-        { name: 'Reddit', url: 'https://reddit.com', icon: 'fa-brands fa-reddit-alien' },
-        { name: 'Twitter', url: 'https://twitter.com', icon: 'fa-brands fa-x-twitter' },
-        { name: 'Discord', url: 'https://discord.com', icon: 'fa-brands fa-discord' },
-        { name: 'LinkedIn', url: 'https://linkedin.com', icon: 'fa-brands fa-linkedin' },
-        { name: 'Mastodon', url: 'https://mastodon.social', icon: 'fa-brands fa-mastodon' },
-        { name: 'Twitch', url: 'https://twitch.tv', icon: 'fa-brands fa-twitch' }
+    'mri': [
+        { name: 'MRI Questions', url: 'https://www.mriquestions.com/index.html', icon: 'fa-solid fa-magnet' },
+        { name: 'MRI Master', url: 'https://mrimaster.com/', icon: 'fa-solid fa-magnet' },
+        { name: 'LarsonLab', url: 'https://larsonlab.github.io/MRI-education-resources/Introduction.html', icon: 'fa-solid fa-magnet' },
+        { name: 'YT Lectures', url: 'https://www.youtube.com/watch?v=gtnOlotFgUY&list=PLWfaNqiSdtzVkfJW2gO-unAYjcDji7-9i', icon: 'fa-brands fa-youtube' },
+        { name: 'MRI SimLab', url: 'https://mrisimlab.com/simulator.html', icon: 'fa-solid fa-magnet' },
+
     ],
-    'media': [
-        { name: 'YouTube', url: 'https://youtube.com', icon: 'fa-brands fa-youtube' },
-        { name: 'Spotify', url: 'https://spotify.com', icon: 'fa-brands fa-spotify' },
-        { name: 'Netflix', url: 'https://netflix.com', icon: 'fa-solid fa-film' },
-        { name: 'SoundCloud', url: 'https://soundcloud.com', icon: 'fa-brands fa-soundcloud' },
-        { name: 'Prime Video', url: 'https://primevideo.com', icon: 'fa-brands fa-amazon' },
-        { name: 'Plex', url: 'https://plex.tv', icon: 'fa-solid fa-circle-play' }
+    'michener': [
+        { name: 'Michbrite', url: 'https://michbrite.michener.ca/', icon: 'fa-solid fa-school-flag' },
+        { name: 'MyMichner', url: 'https://michener.sharepoint.com/sites/StudentHub', icon: 'fa-solid fa-school-flag' },
+        { name: 'Self-service', url: 'https://students.michener.ca/PowerCampusSelfService/Home/LogIn', icon: 'fa-solid fa-school-flag' }
     ],
-    'productivity': [
-        { name: 'Notion', url: 'https://notion.so', icon: 'fa-solid fa-book' },
-        { name: 'Gmail', url: 'https://mail.google.com', icon: 'fa-solid fa-envelope' },
-        { name: 'Calendar', url: 'https://calendar.google.com', icon: 'fa-solid fa-calendar-days' },
-        { name: 'Drive', url: 'https://drive.google.com', icon: 'fa-brands fa-google-drive' },
-        { name: 'Trello', url: 'https://trello.com', icon: 'fa-brands fa-trello' },
-        { name: 'Figma', url: 'https://figma.com', icon: 'fa-brands fa-figma' }
-    ]
 };
 
-const categoryColors = ['mauve', 'blue', 'red', 'green', 'peach', 'teal', 'pink', 'yellow'];
+const categoryColors = ['mauve', 'green', 'peach', 'blue', 'red', 'teal', 'pink', 'yellow'];
 
 // ========================================
 // Search Engine Configuration
@@ -230,9 +219,9 @@ function loadSettings() {
         showSearchBar: 'true',
         showCategories: 'true',
         preferredColumns: 'auto',
-        enabledEngines: mobile ? ['google'] : ['google', 'duckduckgo', 'github', 'youtube'],
+        enabledEngines: mobile ? ['google'] : ['google', 'duckduckgo', 'youtube'],
         preferredEngine: 'google',
-        weatherLocation: 'New York,NY,US',
+        weatherLocation: 'Toronto,Ontario, Canada',
         openWeatherApiKey: '',
         linkBehavior: 'same',
         showKeyboardHints: mobile ? 'false' : 'true',
@@ -1084,7 +1073,7 @@ async function geocodeLocation() {
     }
 
     const response = await fetch(
-        `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(location)}&limit=1&appid=${apiKey}&temperature_unit=metric`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(location)}&limit=1&appid=${apiKey}&units=metric`
     );
 
     if (!response.ok) throw new Error(`Geocoding API error: ${response.status}`);
