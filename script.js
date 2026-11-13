@@ -239,15 +239,7 @@ function loadSettings() {
         locale: defaultLocale,
         socialLinks: [],
         quotes: [
-            '"The only way to do great work is to love what you do." - Steve Jobs',
-            '"First, solve the problem. Then, write the code." - John Johnson',
-            '"Simplicity is the soul of efficiency." - Austin Freeman',
-            '"Make it work, make it right, make it fast." - Kent Beck',
-            '"Talk is cheap. Show me the code." - Linus Torvalds',
-            '"Creativity is intelligence having fun." - Albert Einstein',
-            '"Done is better than perfect." - Sheryl Sandberg',
-            '"Stay hungry, stay foolish." - Steve Jobs',
-            '"Code is like humor. When you have to explain it, it\'s bad." - Cory House'
+            '"... as a whole." - Sam'
         ],
         customColors: {
             primary: '#cba6f7',
