@@ -127,6 +127,7 @@ const defaultLinks = {
     'mri': [
         { name: 'MRI Questions', url: 'https://www.mriquestions.com/index.html', icon: 'fa-solid fa-magnet' },
         { name: 'MRI Master', url: 'https://mrimaster.com/', icon: 'fa-solid fa-magnet' },
+        { name: 'Radiology Cafe', url: 'https://www.radiologycafe.com/frcr-physics-notes/', icon: 'fa-solid fa-magnet' },
         { name: 'LarsonLab', url: 'https://larsonlab.github.io/MRI-education-resources/Introduction.html', icon: 'fa-solid fa-magnet' },
         { name: 'YT Lectures', url: 'https://www.youtube.com/watch?v=gtnOlotFgUY&list=PLWfaNqiSdtzVkfJW2gO-unAYjcDji7-9i', icon: 'fa-brands fa-youtube' },
         { name: 'MRI SimLab', url: 'https://mrisimlab.com/simulator.html', icon: 'fa-solid fa-magnet' },
